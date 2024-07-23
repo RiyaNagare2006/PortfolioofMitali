@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio of Mitali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="mitali.css">
+  <link rel="stylesheet" href= "phone.css">
+  <style>
+    * {
+      margin: 2px;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url('bg3.jpg');
+    }
+
+    .container {
+      display: block;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .photo-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0px;
+    }
+
+    .photo-container img {
+      width: 250px; /* Adjust the size as needed */
+      border-radius: 70px;
+      margin-bottom: 20px;
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: -25px; /* Adjust the position to overlap the photo */
+    }
+
+    .links {
+      height: 60px;
+      width: 60px;
+      background-color: #f5f6fa;
+      border-radius: 50px;
+      text-align: center;
+      margin: 10px;
+      box-shadow: 1px 4px 2px 2px #dcdde1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .links i {
+      transition: all 0.3s linear;
+      font-size: 30px;
+      line-height: 50px; /* Center icon vertically */
+    }
+
+    .links:hover i {
+      transform: scale(1.4);
+    }
+
+    .fa-linkedin {
+      color: #0097e6;
+    }
+
+    .fa-instagram {
+      color: #e84393;
+    }
+
+    .content {
+      margin-top: 40px; /* Add margin to separate from the "About me" section */
+    }
+
+    .heading {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">
+    <span class="TITLE">Mitali's Portfolio</span>
+    <button onclick="document.getElementById('aboutme').scrollIntoView({behavior: 'smooth'});">About Me</button>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'});">Projects</button>
+    <button onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'});">Skills</button>
+    <button onclick="document.getElementById('contacts').scrollIntoView({behavior: 'smooth'});">Contacts</button>
+  </div>
+
+  <div class="container">
+    <div class="photo-container">
+      <img src="my photo.jpg" alt="Profile Photo" >
+      <div class="icon-container">
+        <a class="links" href="https://www.linkedin.com/in/mitali-agrawal-7212a028a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="links" href="https://www.instagram.com/mitali_agrawal_2303?igsh=Y2dxZjF2emI5YjB5" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="aboutme-container">
+      <div align="center" id="aboutme" class="heading">About me</div>
+      <p>I am Mitali Agrawal, a sophomore at IIT Gandhinagar majoring in Mechanical Engineering. With a strong enthusiasm for learning and personal growth, I approach all my endeavors with a sense of joy and dedication. Currently, I contribute as a general member of the Professional Development Council (PDC) and hold a core position in Annuity, the finance club of IIT Gandhinagar. I am also a core member of Palette, the art club at IITGN.</p>
+     <p> Throughout my academic journey, I had the honor of leading a team of 12 members, successfully managing and coordinating our projects to meet deadlines. My leadership was instrumental in ensuring smooth execution of tasks and fostering a collaborative and productive team environment.My active participation in these diverse organizations highlights my commitment to both my professional and creative development. I continuously seek new challenges and opportunities to grow, striving to excel in all my academic and extracurricular pursuits.</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div align="center" id="projects" class="heading">Projects</div>
+    <p>Here are some of the projects I undertook during my first year of BTech as part of the courses "World of Engineering" and "Design Innovation and Prototyping." Each project reflects the skills and knowledge I gained through these courses. Additionally, I have included some of my own designs to showcase my creativity and design capabilities. For a detailed overview, please see the descriptions below. </p>
+    <ol class="lists">
+        <li class="l">
+          <div class="child1">
+            <div class="child2">
+              <img class="image" src="visiongaurds.jpg" alt="VisionGuards">
+              <h1>Smart Stick for Blind</h1>
+              <p class="child3" id="para">This project was done under the WOE course.</p>
+              <div class="child">
+                <a href="https://docs.google.com/presentation/d/1PykyPJVFK8_Qc_s1UXhzvftvCI1pItl-SR1dnBCZfnI/edit?usp=sharing">
+                  <button class="red">Read More</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="l">
+          <div class="child1">
+            <div class="child2">
+              <img class="image" src="fishtank.jpg" alt="Alert Guard">
+              <h1>Automatic Fishtank</h1>
+              <p class="child3" id="para">This project was done under the Design course.</p>
+              <div class="child">
+                  <a href="https://drive.google.com/file/d/1gEL4OqPbFjGCIiX1rC9qbp3V3UNPq9WP/view?usp=sharing">
+                      <button class="red">Read More</button>
+                    </a>
+                </div>
+              </div>
+            </div>
+        </li>
+      <li class="l">
+        <div class="child1">
+          <div class="child2">
+            <img class="image" src="23.jpeg" alt="Design Work">
+            <h1>Design Projects</h1>
+            <p class="child3" id="para"> There are some design works done by me attached here. </p>
+            <div class="child">
+              <a href="https://drive.google.com/drive/folders/1m9nO_wGI6nSV6Lvbd875tln70u9jQRRn?usp=drive_link">
+                <button class="red">Read More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      </ol>
+    <div align="center" id="skills" class="heading card">Skills</div>
+    <ul class="lists">
+      <li>I have nice design skills and can make a fine design using Canva.</li>
+      <li>I am somewhat familiar with web development by making this portfolio.</li>
+      <li>I know Python and C++.</li>
+    </ul>
+    <p></p>
+    <div id="contacts">
+      <div class="heading" align="center">Contacts</div>
+      <a href="tel:+917058050073">
+        <p class="contactsinfo"><i class="fa-solid fa-phone"></i> Phone: +917058050073</p>
+      </a>
+      <a href="mailto:23110206@iitgn.ac.in">
+      <span class="contactsinfo"><i class="fa-solid fa-envelope"></i> Email: 23110206@iitgn.ac.in</span></a>
+      <br />
+      <span onclick="gfg(1)" class="star">★</span>
+      <span onclick="gfg(2)" class="star">★</span>
+      <span onclick="gfg(3)" class="star">★</span>
+      <span onclick="gfg(4)" class="star">★</span>
+      <span onclick="gfg(5)" class="star">★</span>
+      <h3 id="output">Rating is: 0/5</h3>
+    </div>
+  </div>
+
+  <script src="port.js"></script>
+</body>
+</html>
